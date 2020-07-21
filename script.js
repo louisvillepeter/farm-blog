@@ -5,6 +5,7 @@ const vegtable = document.querySelector ('#vegtable');
 const email= document.querySelector ('#email');
 const fruit = document.querySelector ('#fruit');
 const story = document.querySelector ('#story');
+const video = document.getElementById ('video');
 
 document.getElementById("button-submit").addEventListener("click", ValidateEmail, writeStory) ;
 
@@ -42,6 +43,8 @@ function writeStory() {
     finishedStory += "Can I email you at " + email.value + "  to offer you a great deal on some "+ fruit.value + " and some " + vegtable.value + "?"
 
     story.innerHTML = finishedStory
+    video.style.display = "block";
+
 }
 
 document.getElementById("button-reset").onclick = function() {
@@ -49,5 +52,12 @@ document.getElementById("button-reset").onclick = function() {
     document.getElementById("fruit").value = "";
     document.getElementById("vegtable").value = "";
     document.getElementById("name").value = "";
+    
+    video.style.display = "none";
+   
     story.innerHTML  = "";
+     $('a.stop-video').click(function(){
+        $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+    });
   };
+
