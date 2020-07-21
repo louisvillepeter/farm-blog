@@ -7,7 +7,7 @@ const fruit = document.querySelector ('#fruit');
 const story = document.querySelector ('#story');
 const video = document.getElementById ('video');
 
-document.getElementById("button-submit").addEventListener("click", ValidateEmail, writeStory) ;
+document.getElementById("button-submit").addEventListener("click", ValidateEmail );
 
 
 function ValidateEmail() {
@@ -19,10 +19,9 @@ function ValidateEmail() {
     alert('Please provide a valid email address');
     email.focus;
     return false;
- }
+ } else{ writeStory()}
 }
 
-document.getElementById("button-submit").addEventListener("click", writeStory) ;
 
 function Dropdown_Validation(ddlId) {
     var empty = document.getElementById(ddlId).value;
@@ -60,4 +59,5 @@ document.getElementById("button-reset").onclick = function() {
         $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
     });
   };
+
 
