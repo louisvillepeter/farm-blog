@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="request.css">
-  <title>QUEST</title>
+  <title>Form</title>
 </head>
 <body>
     
     <header class="hero-image">
-        <h1 imb>QUEST</h1>
+        <h1 imb>Form</h1>
    </header>
    <section>
   <div class="menu-wrap">
@@ -20,8 +20,8 @@
                     <ul class="inln" >
                         <li><a href="index.html">Home</a></li>
                         <li><a href="beet-article.html">Latest Article</a></li>
-                        <!-- <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li> -->
+                        <li><a href="#">This Page</a></li>
+                        <li><a href="#">To Nothing</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,69 +33,59 @@
         <main>
 
                     <h1>JavaScript and HTML Forms</h1>
-
+            
     <form id="form" action="#" method="post"></form>
 
-        <div class="form-box error" data-errormsg="">
-            <label for="input-quest">What is your quest?</label>
-            <input type="text" id="input-quest" autofocus placeholder="QUEST" tabindex="1"/>
+        <div class="form-field">
+            <label for="name">What is your Name?</label>
+            <input type="text" id="name"  autofocus placeholder="Name" tabindex="1" required/>
         </div>
     
-        <div class="form-box " data-errormsg="">
-            <label for="job">Occupation?</label>
-            <select id="job" tabindex="2">
-                <option value="7">Unemployed</option>
-                <option value="3">Apprentice</option>
-                <option value="2">Knight</option>
-                <option value="1">Vagabond</option>
-                <option value="4">Theif</option>
-                <option value="8">Magician</option>
+        <div class="form-field">
+            <label for="vegtable">Pick the vegtable you like the best.</label>
+            <select id="vegtable"  required tabindex="2">
+                <option value="" selected>Pick a vegtable</option>
+                <option value="Beets">Beets</option>
+                <option value="Tomatos">Tomatos</option>
+                <option value="Cucumber">Cucumbers</option>
+                <option value="Zuchini">Zuchini</option>
+                <option value="Squash">Squash</option>
+                <option value="Corn">Corn</option>
             </select>
         </div>
-        <div class="form-box" data-errormsg="">
-            <label for="input-love">The Name of Your One True Love?</label>
-            <input type="text" id="input-love" required placeholder="THY LOVE" tabindex="3" />
+
+        <div class="form-field">
+            <label for="email">Enter your email:</label>
+            <input type="text" id="email" name="email"  placeholder="email" tabindex="3" required/>  
         </div>
-        <div class="form-box" data-errormsg="">
-            <label for="equip">Your Weapon</label>
-            <select id="equip" tabindex="4">
-                <option value="2">Unarmed</option>
-                <option value="1">The odGauntlets of Mechanix</option>
-                <option value="5">The Shoes of the Goddess Nike</option>
-                <option value="3">The Right Eye of Odin</option>
-                <option value="4">The Sword of Damocles</option>
+
+        <div class="form-field">
+            <label for="fruit">Pick the Fruit you like the best</label>
+            <select id="fruit" required tabindex="4">
+                <option value="" selected>Pick a fruit</option>
+                <option value="Kiwi">Kiwi</option>
+                <option value= "Cherry">Cherry</option>
+                <option value="Apple">Apple</option>
+                <option value="plum">Plum</option>
+                <option value="persimmon">Persimmon</option>
+                <option value="fig">Fig</option>
+
             </select>
         </div>
-        <div class="form-box" data-errormsg="">
-            <label for="input-enemy">What is the name of your sworn enemy?</label>
-            <input type="text" id="input-enemy" required placeholder="THE CURSED WRETCH" tabindex="5" />
-        </div>
-        <div class="form-box" data-errormsg="">
-            <label for="food">Favorite Food Group</label>
-            <select id="food" tabindex="6">
-                <option value="4">First We Feast</option>
-                <option value="1">Beets</option>
-                <option value="2">Gruel</option>
-                <option value="3"> A Tankard Ale</option>
-                <option value="6">Tacos</option>
-                <option value="5">Mutton</option>
-            </select>
-        </div>
+      
         <div class="form-box">
-            <button id="button-cancel">Retreat</button>
-            <button id="button-submit">Adventure!</button>
+            <button id="button-submit" oneclick="valid()">Submit</button>
+            <button id="button-reset">Reset</button>
         </div>
        
     </form>
     <div id="output">
-<p>Your Story....</p>
-<p id="story"> blah</p>
-<button id="again">On to The Next Adventure!</button>
+<p id="story"> </p>
 </div>
  <script src="script.js"></script> 
         </main>
     </div>
 </section>
-<footer>website for us by us for the rest</footer>
+<footer>website by Peter Bates</footer>
 </body>
 </html>

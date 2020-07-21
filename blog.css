@@ -1,6 +1,6 @@
-/* CORE STYLES */
+/* main page style */
 :root {
-    --primary-color: rgba(52,85,219, 0.75);
+  --primary-color: rgba(9, 132, 227, 0.75);
     --overlay-color: rgb(255, 250, 250);
   }
   
@@ -15,9 +15,7 @@
     line-height: 1.4;
   }
   
-  
-
-
+  /* Header style */
   .hero-image:before {
     content: '';
     background: url( "birdhouse.jpg") no-repeat center center/cover;
@@ -39,13 +37,15 @@
     justify-content: center;
     text-align: center;
     width: 100%;
+    -webkit-text-stroke: 3px black;
   }
   
   header h1 {
     font-size: 22vmin;
     text-align: center;
   }
- 
+
+  /* Navigation style */
   li:hover {
     opacity: 0.9;
     color:#fdcb6e;
@@ -65,7 +65,7 @@
     justify-content: space-evenly;
     flex-basis: auto;
     list-style: none;
-    color:#FFD700 ;
+    color:#ffeaa7;
     font-size: 6vmin;
     padding-right: 3rem;
     padding-top: .7rem;
@@ -82,20 +82,15 @@
    flex-wrap: wrap;
   }
 
-  /* Style the "active" element to highlight the current page */
+li:nth-child(even) {
+  color: #fdcb6e;
+}
 .inln a.active {
   background-color: #2196F3;
   color: white;
 }
 
-/* Style the search box inside the navigation bar */
-.inln input[type=text] {
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 30px;
-  font-size: 1.4rem;
-}
+
 /* blog link styling */
 a{
     transition: all .5s;
@@ -103,7 +98,6 @@ a{
     color: #fff;
 }
  .container {
-    /* max-width: 960px; */
     display:flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -134,7 +128,6 @@ main{
 .singleBlog{
 position: relative;
 overflow: hidden;
-/* max-height: 1100px; */
 height: 100%;
 box-sizing: border-box;
 box-shadow: 0 2px 10px #ccc;
@@ -204,11 +197,21 @@ font-weight: 400;
 .blogContent a:hover{
     text-decoration: underline;
 }
+button{
+  background-color: transparent;
+}
+
+/* footer */
+footer{
+  text-align: center;
+  background-color:var(--primary-color);
+  color:var(--overlay-color) ;
+}
 
   /* media queries */
-
  @media (max-width: 700px){
-    /* hamburger code */
+   
+  /* hamburger code */
     .menu-wrap .toggler {
       position: absolute;
       top: 0;
@@ -236,7 +239,6 @@ font-weight: 400;
       justify-content: center;
     }
 
-    /* Hamburger Line */
     .menu-wrap .hamburger > div {
       position: relative;
       flex: none;
@@ -260,29 +262,28 @@ font-weight: 400;
       background: inherit;
     }
 
-    /* Moves Line Down */
+   
     .menu-wrap .hamburger > div::after {
       top: 10px;
     }
 
-    /* Toggler Animation */
+    
     .menu-wrap .toggler:checked + .hamburger > div {
       transform: rotate(135deg);
     }
 
-    /* Turns Lines Into X */
+    
     .menu-wrap .toggler:checked + .hamburger > div:before,
     .menu-wrap .toggler:checked + .hamburger > div:after {
       top: 0;
       transform: rotate(90deg);
     }
 
-    /* Rotate On Hover When Checked */
+    
     .menu-wrap .toggler:checked:hover + .hamburger > div {
       transform: rotate(225deg);
     }
 
-    /* Show Menu */
 
     .menu-wrap .toggler:checked ~ .menu > div {
       transform: scale(1);
@@ -335,7 +336,7 @@ font-weight: 400;
   }
 
   nav > ul > li {
-    font-size: 4rem;
+    font-size: 3rem;
     padding-left: 3rem;
     padding-right: 3rem;
     
