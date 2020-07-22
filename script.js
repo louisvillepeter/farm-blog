@@ -46,18 +46,15 @@ function writeStory() {
 
 }
 
-document.getElementById("button-reset").onclick = function() {
+
+  document.getElementById("button-reset").onclick = function() {
     document.getElementById("email").value = "";
     document.getElementById("fruit").value = "";
     document.getElementById("vegtable").value = "";
     document.getElementById("name").value = "";
-    
-    video.style.display = "none";
-   
     story.innerHTML  = "";
-     $('a.stop-video').click(function(){
-        $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-    });
+
+    video.style.display = "none";
+    var iframe = document.querySelector('iframe');
+    iframe.src = iframe.src;
   };
-
-

@@ -9,8 +9,4 @@ page 1. The index.html page 2. is beet-article.html. : in smaller view widths th
 
 
 
-
-page 3. is request.html. I need to gain control of the video to stop it when the reset button is clicked
-
-
 Any help would be much appriciated
