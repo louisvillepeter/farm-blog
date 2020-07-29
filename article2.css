@@ -19,7 +19,7 @@
  /* Header style */
   .hero-image:before {
     content: '';
-    background: url( "birdhouse.jpg") no-repeat center center/cover;
+    background: url( "birdhouse2.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -38,6 +38,7 @@
     text-align: center;
     width: 100%;
     -webkit-text-stroke: 3px black;
+    background-color: blue;
   }
 
   header h1 {
@@ -90,9 +91,9 @@ a{
   border-top: 10px;
     transition: all .5s;
     text-decoration: none;
-    color:#2196F3;
     text-size-adjust: 60%;
 }
+
 li:nth-child(even) {
   color:   #fdcb6e;
 }
@@ -160,20 +161,25 @@ article{
     height:auto; 
     /* position: ; */
  }
+ .click-here{
+  font-size: 18px;
+  padding: 7px 10px;
 
+ }
 button{
     display: inline-block;
-    padding: 5px 10px;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 3px;
     font-weight: 550;
-    height: 45px;
+    height: 48px;
     margin-bottom: 6px;
     background-color: #2ecc71;
+  
     }
  p{
      flex-wrap: inherit;
      font-weight: 500;
+     font-size: 20px;
     
  }
  article{
@@ -291,19 +297,27 @@ footer{
     opacity: 1;
     transition:  opacity 0.4s ease 0.4s;
   }
-
-  .menu-wrap .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-  }
-
+.menu-wrap  {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
   .menu-wrap .menu > div {
     background: var(--primary-color);
     width: 100%;
@@ -389,8 +403,29 @@ nav > ul > li {
 }
 }
 
-@media (max-width: 1020px) and (min-width: 700px){
+@media (min-width: 700px) and (max-width: 1020px){
   button{
     height: 50px;
     }
+    .inln > li {
+      font-size: 6vmin;
+    }
+    /* nav > ul > li {
+      padding: 5px 15px;
+      font-size: 35px;
+    } */
 }
+@media (min-width: 1021px) {
+  /* nav > ul > li {
+    padding: 5px 30px;
+    font-size: 45px;
+
+  } */
+  p{
+    font-size: 30px;
+}
+.click-here{
+  font-size: 18px;
+  padding: 7px 10px;
+
+ }

@@ -44,3 +44,11 @@ function  writebeet1(){
 function  writebeet2(){
     alert("The beet was initially cultivated around 2,000 BC in the Mediterranean region");
     }
+
+    
+    const mobileMenuBtn = document.querySelector('.toggler');
+    const menuWrap = document.querySelector('.menu-wrap')
+    mobileMenuBtn.addEventListener('input', function () {
+      if (this.checked) menuWrap.style.zIndex = 1
+      else menuWrap.style.zIndex = 0
+    });
