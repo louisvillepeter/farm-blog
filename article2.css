@@ -17,16 +17,6 @@
   }
 
  /* Header style */
-  .hero-image:before {
-    content: '';
-    background: url( "birdhouse2.jpg") no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
   header {
     color: #fff;
     height: 50vmin;
@@ -38,7 +28,7 @@
     text-align: center;
     width: 100%;
     -webkit-text-stroke: 3px black;
-    background-color: blue;
+    background-color:#45aaf2;
   }
 
   header h1 {
@@ -111,7 +101,7 @@ li:nth-child(even) {
   }
 
   body{
-      background-color: rgb(245, 252, 239);
+      background-color: #ffffff;
   }
 main{
     display: flex;
@@ -159,7 +149,6 @@ article{
     align-self: center;
      max-width:100%; 
     height:auto; 
-    /* position: ; */
  }
  .click-here{
   font-size: 18px;
@@ -219,7 +208,6 @@ footer{
 /* Media Queries */
 
 @media (max-width: 700px){
-  /* Hamburger code */
 .menu-wrap .toggler {
     position: absolute;
     top: 0;
@@ -390,7 +378,7 @@ nav > ul > li {
   justify-content: space-evenly;
   flex-basis: auto;
   list-style: none;
-  font-size: 6vmin;
+  font-size: 3vw;
   padding-right: 3rem;
   padding-top: .7rem;
   padding-bottom: .7rem;
@@ -407,20 +395,8 @@ nav > ul > li {
   button{
     height: 50px;
     }
-    .inln > li {
-      font-size: 6vmin;
-    }
-    /* nav > ul > li {
-      padding: 5px 15px;
-      font-size: 35px;
-    } */
 }
 @media (min-width: 1021px) {
-  /* nav > ul > li {
-    padding: 5px 30px;
-    font-size: 45px;
-
-  } */
   p{
     font-size: 30px;
 }

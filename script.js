@@ -41,7 +41,7 @@ function writeStory() {
     finishedStory += "and you also like " + fruit.value + " . "
     finishedStory += "Can I email you at " + email.value + "  to offer you a great deal on some "+ fruit.value + " and some " + vegtable.value + "?"
 
-    story.innerHTML = finishedStory
+    story.innerHTML = finishedStory;
     video.style.display = "block";
 
 }
